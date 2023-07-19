@@ -4,136 +4,157 @@
     "price": 25,
     "company": "marcos",
     "rating": 4,
-    "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/e9b50e5e1200f3d3d41e40823fe9b7fb43d0b4f2/Aston-Modern-Solid-wood-Accent-Chair.jpg"
+    "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/e9b50e5e1200f3d3d41e40823fe9b7fb43d0b4f2/Aston-Modern-Solid-wood-Accent-Chair.jpg",
+    "description": "Elevate your living space with this exquisite accent chair. Its modern design and solid wood construction provide both style and durability. The comfortable seat and backrest make it a perfect addition to any room for relaxing and unwinding."
   },
   {
     "name": "albany sectional",
     "price": 109,
     "company": "liddy",
     "rating": 5,
-    "image": "https://images.furnituredealer.net/img/products%2Falbany%2Fcolor%2F0883_0883-2pc-gens-23092-b1.jpg"
+    "image": "https://images.furnituredealer.net/img/products%2Falbany%2Fcolor%2F0883_0883-2pc-gens-23092-b1.jpg",
+    "description": "Create a luxurious seating area with this Albany sectional. Its contemporary design and high-quality materials ensure comfort and style. Ideal for entertaining guests or enjoying family time together."
   },
   {
     "name": "albany table",
     "price": 309,
     "company": "liddy",
     "rating": 4.9,
-    "image": "https://image.architonic.com/img_pro2-4/145/2512/alb5-albany-coffee-table-01-b.jpg"
+    "image": "https://image.architonic.com/img_pro2-4/145/2512/alb5-albany-coffee-table-01-b.jpg",
+    "description": "Add a touch of sophistication to your living room with the Albany table. Its elegant design and sturdy construction make it a perfect choice for displaying decorative items or serving drinks and snacks."
   },
   {
     "name": "armchair",
     "price": 125,
     "company": "marcos",
     "rating": 4.8,
-    "image": "https://www.woods-furniture.co.uk/images/products/standard/9870_23581.jpg"
+    "image": "https://www.woods-furniture.co.uk/images/products/standard/9870_23581.jpg",
+    "description": "Sink into the comfort of this stylish armchair. The combination of its plush cushions and solid wood frame offers a cozy and inviting seating experience. Perfect for creating a cozy reading nook or as an accent piece in your living room."
   },
   {
     "name": "bar stool",
     "price": 40,
     "company": "liddy",
     "rating": 4.6,
-    "image": "https://images.thdstatic.com/productImages/ef350f4f-8861-43b4-ab9a-b90737a41c42/svn/brown-bar-stools-husf-sbs1006bn-30-64_1000.jpg"
+    "image": "https://images.thdstatic.com/productImages/ef350f4f-8861-43b4-ab9a-b90737a41c42/svn/brown-bar-stools-husf-sbs1006bn-30-64_1000.jpg",
+    "description": "Upgrade your kitchen or bar area with these sleek bar stools. Their modern design and sturdy build provide a comfortable seating experience. The perfect addition for entertaining guests or enjoying a quick meal."
   },
   {
     "name": "dining table",
     "price": 42,
     "company": "ikea",
     "rating": 4.55,
-    "image": "https://www.at-home.co.in/cdn/shop/products/EliteEngineeredMarbleTopSolidWoodDiningTable.jpg?v=1671621485"
+    "image": "https://www.at-home.co.in/cdn/shop/products/EliteEngineeredMarbleTopSolidWoodDiningTable.jpg?v=1671621485",
+    "description": "Gather your loved ones around this elegant dining table. Its solid wood construction and stylish design create a warm and inviting atmosphere for family meals and social gatherings."
   },
   {
     "name": "emperor bed",
     "price": 23,
     "company": "ikea",
-    "image": "https://www.theheadboardworkshop.co.uk/10702-thickbox_default/emperor-coll-bed.jpg"
+    "image": "https://www.theheadboardworkshop.co.uk/10702-thickbox_default/emperor-coll-bed.jpg",
+    "description": "Experience a night of luxury with the Emperor bed. Its sophisticated design and premium materials offer both comfort and style for a peaceful night's sleep."
   },
   {
     "name": "entertainment center",
     "price": 59,
     "featured": true,
     "company": "caressa",
-    "image": "https://www.woodwaves.com/cdn/shop/products/Farmhouse-Rustic-Floating-TV-Stand-Entertainment-Center-Console-Bookcases-Floating-Woodwaves-Spice_2000x1336.jpg?v=1615242508"
+    "image": "https://www.woodwaves.com/cdn/shop/products/Farmhouse-Rustic-Floating-TV-Stand-Entertainment-Center-Console-Bookcases-Floating-Woodwaves-Spice_2000x1336.jpg?v=1615242508",
+    "description": "Organize your entertainment area with this stunning entertainment center. Its rustic farmhouse design and ample storage space make it a focal point in your living room while keeping your media and accessories neatly organized."
   },
   {
     "name": "high-back bench",
     "price": 39,
     "featured": true,
     "company": "ikea",
-    "image": "https://julian-bowen.co.uk/thumbs/1200x750r/products/luxe-bench-mustard-roomset.jpg"
+    "image": "https://julian-bowen.co.uk/thumbs/1200x750r/products/luxe-bench-mustard-roomset.jpg",
+    "description": "Upgrade your dining area with this elegant high-back bench. Its stylish design and comfortable seating create a cozy and inviting dining experience for you and your guests."
   },
   {
     "name": "leather sofa",
     "price": 99,
     "company": "caressa",
-    "image": "https://gusmodern.com/cdn/shop/products/CabotSofaSaddleBrown.jpg?v=1667588860"
+    "image": "https://gusmodern.com/cdn/shop/products/CabotSofaSaddleBrown.jpg?v=1667588860",
+    "description": "Indulge in luxury with this sophisticated leather sofa. Its sleek design and premium leather upholstery provide both comfort and style, making it the perfect centerpiece for your living room."
   },
   {
     "name": "modern bookshelf",
     "price": 31,
     "featured": true,
     "company": "caressa",
-    "image": "https://m.media-amazon.com/images/I/71TuElSrsdL.jpg"
+    "image": "https://m.media-amazon.com/images/I/71TuElSrsdL.jpg",
+    "description": "Showcase your favorite books and decor with this modern bookshelf. Its minimalist design and sturdy construction create a chic display area, adding a touch of elegance to any room."
   },
   {
     "name": "modern poster",
     "price": 30,
     "company": "liddy",
-    "image": "https://elements-cover-images-0.imgix.net/1eb0d96f-73e4-4941-9aea-09db5255078d?auto=compress%2Cformat&fit=max&w=2740&s=1b1d0069cacb9c84365c2218b4c12d40"
+    "image": "https://elements-cover-images-0.imgix.net/1eb0d96f-73e4-4941-9aea-09db5255078d?auto=compress%2Cformat&fit=max&w=2740&s=1b1d0069cacb9c84365c2218b4c12d40",
+    "description": "Decorate your walls with this captivating modern poster. Its eye-catching design and high-quality print add a contemporary flair to any space, making it a perfect accent for your home decor."
   },
   {
     "name": "shelf",
     "price": 30,
     "company": "ikea",
-    "image": "https://m.media-amazon.com/images/I/61ep3xgFcaL.jpg"
+    "image": "https://m.media-amazon.com/images/I/61ep3xgFcaL.jpg",
+    "description": "Organize your belongings with this versatile shelf. Its simple yet functional design provides ample storage space, making it a practical addition to any room in your home."
   },
   {
     "name": "simple chair",
     "price": 109,
     "company": "liddy",
-    "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_656,w_1166/v1591036520/www.steelcase.com/2020/06/01/20-0135259.jpg"
+    "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_656,w_1166/v1591036520/www.steelcase.com/2020/06/01/20-0135259.jpg",
+    "description": "Add a touch of modern elegance with this simple chair. Its sleek design and high-quality materials offer both comfort and style, making it a versatile piece for any room in your home."
   },
   {
     "name": "sofa set",
     "price": 129,
     "company": "marcos",
-    "image": "https://shop.gkwretail.com/cdn/shop/products/Design-Sofa-Set_-American-Style-Modern-Fabric-Upholstered-Sofa-Set_1.png?v=1630733506"
+    "image": "https://shop.gkwretail.com/cdn/shop/products/Design-Sofa-Set_-American-Style-Modern-Fabric-Upholstered-Sofa-Set_1.png?v=1630733506",
+    "description": "Create a stylish and inviting living room with this sofa set. Its American-style design and plush fabric upholstery provide a cozy and comfortable seating experience for you and your guests."
   },
   {
     "name": "suede armchair",
     "price": 15,
     "company": "caressa",
-    "image": "https://www.meubles.ie/images/products/standard/16282_4543.jpg"
+    "image": "https://www.meubles.ie/images/products/standard/16282_4543.jpg",
+    "description": "Add a pop of color to your space with this suede armchair. Its vibrant design and soft upholstery create a cozy and inviting atmosphere, making it a perfect accent piece for any room."
   },
   {
     "name": "utopia sofa",
     "price": 79,
     "featured": true,
     "company": "liddy",
-    "image": "https://sosageblog.com/wp-content/uploads/2021/08/couch-sofa-sectional.jpg"
+    "image": "https://sosageblog.com/wp-content/uploads/2021/08/couch-sofa-sectional.jpg",
+    "description": "Experience ultimate comfort with the Utopia sofa. Its sectional design and plush cushions offer a luxurious seating experience, making it the ideal centerpiece for your living room."
   },
   {
     "name": "vase table",
     "price": 120,
     "featured": true,
     "company": "marcos",
-    "image": "https://img.staticmb.com/mbcontent/images/uploads/2023/4/flower-vase-design.jpg"
+    "image": "https://img.staticmb.com/mbcontent/images/uploads/2023/4/flower-vase-design.jpg",
+    "description": "Enhance your decor with this stylish vase table. Its unique design and sturdy construction provide a beautiful display area for your favorite flowers and decor, adding a touch of sophistication to your home."
   },
   {
     "name": "wooden bed",
     "price": 25,
     "company": "ikea",
-    "image": "https://www.mattressman.co.uk/images/ProductImages/root/corona-low-end-a230ccec.jpg"
+    "image": "https://www.mattressman.co.uk/images/ProductImages/root/corona-low-end-a230ccec.jpg",
+    "description": "Create a cozy and rustic bedroom with this wooden bed. Its low-end design and durable wood construction offer both comfort and style, making it the perfect retreat for a restful night's sleep."
   },
   {
     "name": "wooden desk",
     "price": 15,
     "company": "ikea",
-    "image": "https://cb2.scene7.com/is/image/CB2/DrommenDeskSHS18_1x1/$web_pdp_main_carousel_sm$/190905022907/drommen-desk.jpg"
+    "image": "https://cb2.scene7.com/is/image/CB2/DrommenDeskSHS18_1x1/$web_pdp_main_carousel_sm$/190905022907/drommen-desk.jpg",
+    "description": "Maximize your productivity with this functional wooden desk. Its sleek and minimalistic design provides a spacious work area, making it an ideal addition to your home office or study space."
   },
   {
     "name": "wooden desk",
     "price": 40,
     "company": "ikea",
-    "image": "https://effydesk.ca/cdn/shop/products/Solid-wood-tabletop-pheasantwood-3-segment-frame-white_de5bbc62-af8a-48ff-8641-e88aaa6f059b_1180x859.jpg?v=1671827910"
+    "image": "https://effydesk.ca/cdn/shop/products/Solid-wood-tabletop-pheasantwood-3-segment-frame-white_de5bbc62-af8a-48ff-8641-e88aaa6f059b_1180x859.jpg?v=1671827910",
+    "description": "Upgrade your workspace with this solid wooden desk. Its high-quality materials and adjustable features offer a comfortable and functional work environment, perfect for enhancing your productivity."
   }
 ]
