@@ -14,10 +14,6 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.get('/', (req, res) => {
-  res.send('Hello from home page!');
-});
-
 app.use('/api/v1/products', productsRouter);
 
 app.use(notFoundMiddleware);
