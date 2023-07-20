@@ -7,10 +7,10 @@ const Search = () => {
         <input
           type="text"
           name="name"
-          className="w-full bg-[#f1f5f9] pl-8 rounded border outline-none focus:outline focus:outline-[#8b5cf5] focus:outline-2"
+          className="w-full bg-[#f8fafc] pl-8 rounded border outline-none focus:outline focus:outline-[#8b5cf5] focus:outline-2"
         />
       </form>
-      <HiSearch className="absolute top-1 left-2 text-[#64748b]" />
+      <HiSearch className="absolute top-[5px] left-2 text-[#64748b]" />
     </div>
   );
 };
