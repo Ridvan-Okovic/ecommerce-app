@@ -7,6 +7,7 @@ import Price from '../components/Layout/Price';
 import Shipping from '../components/Layout/Shipping';
 import ClearFilters from '../components/Layout/ClearFilters';
 import Products from '../components/Shop/Products';
+import Banner from '../components/Layout/Banner';
 
 const HomePage = () => {
   const [setActiveCategory] = useState('All');
@@ -20,7 +21,8 @@ const HomePage = () => {
         <Shipping />
         <ClearFilters />
       </aside>
-      <section className="w-full h-full border">
+      <section className="h-full mt-24 flex flex-col items-center mx-12">
+        <Banner />
         <Products />
       </section>
     </section>
