@@ -9,7 +9,7 @@ const Banner = () => {
         <span>{products.length} </span>
         Products Found
       </h3>
-      <div className="border-t-2 w-[50%] pb-1 px-36"></div>
+      <div className="border-t-2 h-1 w-[60%] pb-1"></div>
       <div className="flex flex-row gap-4">
         <h3>Sort By </h3>
         <span>

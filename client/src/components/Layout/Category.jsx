@@ -2,12 +2,19 @@ import { useState } from 'react';
 
 const Category = ({ setActiveCategory }) => {
   const [isActive, setIsActive] = useState(0);
-  const categories = ['All', 'Office', 'Kitchen', 'Bedroom', 'Dining', 'Kids'];
+  const categories = [
+    'All',
+    'Office',
+    'Kitchen',
+    'Bedroom',
+    'Dining',
+    'Living room',
+  ];
 
-  const addFilter = (job, index) => (e) => {
+  const addFilter = (category, index) => (e) => {
     e.preventDefault();
     setIsActive(index);
-    setActiveCategory(job);
+    setActiveCategory(category);
   };
   return (
     <>
