@@ -25,6 +25,14 @@ const Products = ({ category, company, pageNumber }) => {
     url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&company=${company.toLocaleLowerCase()}&category=${category}`;
   }
 
+  if (category !== 'All' && pageNumber !== 1) {
+    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&page=${pageNumber}&category=${category}`;
+  }
+
+  if (company !== 'All' && pageNumber !== 1) {
+    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&page=${pageNumber}&company=${company.toLocaleLowerCase()}`;
+  }
+
   useEffect(() => {
     async function getProducts() {
       try {
