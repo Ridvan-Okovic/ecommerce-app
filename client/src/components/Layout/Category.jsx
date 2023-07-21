@@ -1,21 +1,18 @@
-import { useState } from 'react';
+const categories = [
+  'All',
+  'Office',
+  'Kitchen',
+  'Bedroom',
+  'Dining',
+  'Living room',
+];
 
-const Category = ({ setActiveCategory }) => {
-  const [isActive, setIsActive] = useState(0);
-  const categories = [
-    'All',
-    'Office',
-    'Kitchen',
-    'Bedroom',
-    'Dining',
-    'Living room',
-  ];
-
-  const addFilter = (category, index) => (e) => {
+const Category = ({ activeCategory, setActiveCategory }) => {
+  const addFilter = (category) => (e) => {
     e.preventDefault();
-    setIsActive(index);
     setActiveCategory(category);
   };
+
   return (
     <>
       <h3 className="text-lg font-semibold">Category</h3>
@@ -24,9 +21,9 @@ const Category = ({ setActiveCategory }) => {
           return (
             <button
               key={index}
-              onClick={addFilter(category, index)}
+              onClick={addFilter(category)}
               className={
-                index === isActive
+                category === activeCategory
                   ? 'text-[#64738b] font-semibold'
                   : 'text-[#abb2bc]'
               }
