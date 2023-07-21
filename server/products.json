@@ -177,5 +177,13 @@
     "image": "https://effydesk.ca/cdn/shop/products/Solid-wood-tabletop-pheasantwood-3-segment-frame-white_de5bbc62-af8a-48ff-8641-e88aaa6f059b_1180x859.jpg?v=1671827910",
     "description": "Upgrade your workspace with this solid wooden desk. Its high-quality materials and adjustable features offer a comfortable and functional work environment, perfect for enhancing your productivity.",
     "category": "Office"
+  },
+  {
+    "name": "vase",
+    "price": 24.99,
+    "company": "liddy",
+    "image": "https://th-thumbnailer.cdn-si-edu.com/L9Zuc419SBd7IHDrAAfcQmMFidw=/fit-in/1600x0/filters:focal(700x527:701x528)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/33/e0/33e08ce6-e242-4cbf-8d16-e5e69dd98b5a/vase3.jpg",
+    "description": "Elevate your interior decor with this exquisite decorative vase. Crafted with precision and attention to detail, this vase features an elegant design that complements any style of home decor. Its versatile size allows you to display it as a standalone centerpiece or use it to hold your favorite flowers, adding a touch of natural beauty to your living space. Made from high-quality materials, this vase is not only visually appealing but also durable, ensuring it remains a stunning accent in your home for years to come.",
+    "category": "Living room"
   }
 ]

@@ -42,9 +42,13 @@ const getAllProducts = async (req, res) => {
 
   const products = await result;
 
-  res
-    .status(200)
-    .json({ success: true, products: products, nbHits: products.length });
+  res.status(200).json({ success: true, products, nbHits: products.length });
 };
 
-module.exports = { getAllProducts };
+const getProductById = async (req, res) => {
+  const { id } = req.params;
+  const product = await Product.findById(id);
+  res.status(200).json({ success: true, product });
+};
+
+module.exports = { getAllProducts, getProductById };
