@@ -1,9 +1,10 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductsContext from '../../context/products-context';
 import Product from './Product';
 
 const Products = ({ category, company, pageNumber }) => {
+  const [loading, setLoading] = useState(false);
   const { products, setProducts } = useContext(ProductsContext);
 
   let url =
@@ -34,16 +35,19 @@ const Products = ({ category, company, pageNumber }) => {
   }
 
   useEffect(() => {
+    setLoading(true);
     async function getProducts() {
       try {
         const prods = await axios.get(url);
         setProducts(prods.data.products);
       } catch (error) {
+        setLoading(false);
         console.log(error);
       }
     }
 
     getProducts();
+    setLoading(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category, company, pageNumber]);
 
@@ -51,6 +55,9 @@ const Products = ({ category, company, pageNumber }) => {
     <p className="text-center w-full font-medium text-xl">
       No products match your description.
     </p>
+  );
+  const loadingMessage = (
+    <p className="text-center w-full font-medium text-xl">Loading...</p>
   );
 
   const mappedProducts = products.map((product) => {
@@ -70,6 +77,7 @@ const Products = ({ category, company, pageNumber }) => {
   return (
     <>
       {mappedProducts.length === 0 && noProductsFound}
+      {loading && loadingMessage}
       <div className="grid grid-cols-3 gap-x-6 gap-y-8">
         {mappedProducts.length > 0 && mappedProducts}
       </div>

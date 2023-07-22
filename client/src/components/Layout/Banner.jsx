@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import ProductsContext from '../../context/products-context';
 
+import { VscArrowDown } from 'react-icons/vsc';
+
 const Banner = () => {
   const { products } = useContext(ProductsContext);
   return (
@@ -12,8 +14,11 @@ const Banner = () => {
       <div className="border-t-2 h-1 w-[60%] pb-1"></div>
       <div className="flex flex-row gap-4">
         <h3>Sort By </h3>
-        <span>
-          Price<button>(Lowest)</button>
+        <span className="flex">
+          Price
+          <button className="flex items-center">
+            (Lowest) <VscArrowDown />
+          </button>
         </span>
       </div>
     </div>
