@@ -14,6 +14,7 @@ const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [company, setActiveCompany] = useState('All');
   const [pageNumber, setPageNumber] = useState(1);
+  const [sort, setSort] = useState('');
   return (
     <section className="mx-56 h-full flex items-center justify-center font-montserrat mt-36">
       <aside className="w-72 px-4 h-full flex flex-col">
@@ -31,12 +32,15 @@ const HomePage = () => {
         />
       </aside>
       <section className="h-full w-[1200px] flex flex-col items-center mx-12">
-        <Banner />
+        <Banner setSort={setSort} />
+
         <Products
           category={activeCategory}
           company={company}
           pageNumber={pageNumber}
+          sort={sort}
         />
+
         <PageNumbers pageNumber={pageNumber} setPageNumber={setPageNumber} />
       </section>
     </section>

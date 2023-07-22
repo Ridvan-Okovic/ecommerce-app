@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import ProductsContext from '../../context/products-context';
 
-import { VscArrowDown } from 'react-icons/vsc';
+import { VscArrowUp } from 'react-icons/vsc';
 
-const Banner = () => {
+const Banner = ({ setSort }) => {
   const { products } = useContext(ProductsContext);
   return (
     <div className="flex w-full justify-between items-baseline gap-6 mb-4 text-xl font-medium">
@@ -15,9 +15,14 @@ const Banner = () => {
       <div className="flex flex-row gap-4">
         <h3>Sort By </h3>
         <span className="flex">
-          Price
-          <button className="flex items-center">
-            (Lowest) <VscArrowDown />
+          <button
+            onClick={() => {
+              setSort('-price');
+            }}
+            className="flex items-center"
+          >
+            Price
+            <VscArrowUp />
           </button>
         </span>
       </div>
