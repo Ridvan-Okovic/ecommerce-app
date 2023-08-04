@@ -25,16 +25,33 @@ const ProductDetailsPage = () => {
 
   return (
     <div className="w-full h-[calc(100%-56px)] grid place-items-center">
-      <div className="w-1/4 shadow-lg rounded flex">
+      <div className="w-2/4 shadow-lg rounded flex">
         <img
           className="object-contain w-96 rounded-l"
           src={product.image}
           alt="img"
         />
-        <div className="w-full">
-          <h3 className="text-center text-xl capitalize font-medium mt-4">
-            {product.name}
-          </h3>
+
+        <div className="mx-8 my-4 flex flex-col items-start justify-between">
+          <div>
+            <div>
+              <h3 className="text-center text-2xl capitalize font-medium">
+                {product.name}
+              </h3>
+              <p className="mt-4 text-lg">{product.description}</p>
+            </div>
+            <div className="flex gap-2">
+              <p className="bg-[#f8fafc] mt-4 px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
+                {product.company}
+              </p>
+              <p className="bg-[#f8fafc] mt-4 px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
+                {product.category}
+              </p>
+            </div>
+          </div>
+          <div>
+            <span>{product.price}</span>
+          </div>
         </div>
       </div>
     </div>
