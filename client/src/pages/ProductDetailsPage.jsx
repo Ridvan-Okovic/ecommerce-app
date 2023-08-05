@@ -25,9 +25,9 @@ const ProductDetailsPage = () => {
 
   return (
     <div className="w-full h-[calc(100%-56px)] grid place-items-center">
-      <div className="w-2/4 shadow-lg rounded flex">
+      <div className="w-2/4 shadow-[0_1.5px_5px_0_rgba(0,0,0,0.15)] rounded flex">
         <img
-          className="object-contain w-96 rounded-l"
+          className="object-contain w-96 rounded-l shadow-[0_1.5px_5px_0_rgba(0,0,0,0.15)]"
           src={product.image}
           alt="img"
         />
@@ -40,17 +40,92 @@ const ProductDetailsPage = () => {
               </h3>
               <p className="mt-4 text-lg">{product.description}</p>
             </div>
-            <div className="flex gap-2">
-              <p className="bg-[#f8fafc] mt-4 px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
-                {product.company}
-              </p>
-              <p className="bg-[#f8fafc] mt-4 px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
-                {product.category}
-              </p>
+            <div className="flex gap-2 items-center justify-between mt-4">
+              <div className="flex gap-2">
+                <p className="bg-[#f8fafc] px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
+                  {product.company}
+                </p>
+                <p className="bg-[#f8fafc] px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
+                  {product.category}
+                </p>
+              </div>
+              <div className="flex items-center">
+                <svg
+                  id="1"
+                  className={`w-5 h-5 ${
+                    Number(product.rating) >= 1
+                      ? 'text-yellow-500'
+                      : 'text-[#64738b]'
+                  }`}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg
+                  id="2"
+                  className={`w-5 h-5 ${
+                    Number(product.rating) >= 2
+                      ? 'text-yellow-500'
+                      : 'text-[#64738b]'
+                  }`}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg
+                  id="3"
+                  className={`w-5 h-5 ${
+                    Number(product.rating) >= 3
+                      ? 'text-yellow-500'
+                      : 'text-[#64738b]'
+                  }`}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg
+                  id="4"
+                  className={`w-5 h-5 ${
+                    Number(product.rating) >= 4
+                      ? 'text-yellow-500'
+                      : 'text-[#64738b]'
+                  }`}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg
+                  id="5"
+                  className={`w-5 h-5 ${
+                    Number(product.rating) >= 5
+                      ? 'text-yellow-500'
+                      : 'text-[#64738b]'
+                  }`}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <p className="ml-2 text-sm font-medium text-[#64738b]">
+                  {product.rating} out of 5
+                </p>
+              </div>
             </div>
           </div>
-          <div>
-            <span>{product.price}</span>
+          <div className="w-full flex justify-end gap-4">
+            <span className="text-2xl text-[#b49b8b]">${product.price}</span>
+            <button className="bg-[#f8fafc] px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
+              Add to cart
+            </button>
           </div>
         </div>
       </div>

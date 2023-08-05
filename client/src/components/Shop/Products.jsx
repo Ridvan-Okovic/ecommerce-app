@@ -7,37 +7,23 @@ const Products = ({ category, company, pageNumber, sort }) => {
   const { products, setProducts } = useContext(ProductsContext);
   const [error, setError] = useState(false);
 
-  console.log(sort);
-
   let url =
     'http://localhost:3001/api/v1/products?fields=price,name,image,company,rating';
 
-  if (category !== 'All') {
-    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&category=${category}`;
+  if (company !== 'All') {
+    url = url + `&company=${company.toLocaleLowerCase()}`;
   }
 
-  if (company !== 'All') {
-    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&company=${company.toLocaleLowerCase()}`;
+  if (category !== 'All') {
+    url = url + `&category=${category}`;
   }
 
   if (pageNumber !== 1) {
-    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&page=${pageNumber}`;
+    url = url + `&page=${pageNumber}`;
   }
 
   if (sort.trim() !== '') {
-    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&sort=${sort}`;
-  }
-
-  if (category !== 'All' && company !== 'All') {
-    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&company=${company.toLocaleLowerCase()}&category=${category}`;
-  }
-
-  if (category !== 'All' && pageNumber !== 1) {
-    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&page=${pageNumber}&category=${category}`;
-  }
-
-  if (company !== 'All' && pageNumber !== 1) {
-    url = `http://localhost:3001/api/v1/products?fields=price,name,image,company,rating&page=${pageNumber}&company=${company.toLocaleLowerCase()}`;
+    url = url + `&sort=${sort}`;
   }
 
   useEffect(() => {
