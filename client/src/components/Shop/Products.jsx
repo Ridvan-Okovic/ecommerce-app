@@ -22,8 +22,12 @@ const Products = ({ category, company, pageNumber, sort }) => {
     url = url + `&page=${pageNumber}`;
   }
 
-  if (sort.trim() !== '') {
-    url = url + `&sort=${sort}`;
+  if (sort.trim() === 'Price lowest') {
+    url = url + `&sort=price`;
+  }
+
+  if (sort.trim() === 'Price highest') {
+    url = url + `&sort=-price`;
   }
 
   useEffect(() => {

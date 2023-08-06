@@ -27,7 +27,7 @@ const ProductDetailsPage = () => {
     <div className="w-full h-[calc(100%-56px)] grid place-items-center">
       <div className="w-2/4 shadow-[0_1.5px_5px_0_rgba(0,0,0,0.15)] rounded flex">
         <img
-          className="object-contain w-96 rounded-l shadow-[0_1.5px_5px_0_rgba(0,0,0,0.15)]"
+          className="object-contain w-96 rounded-l"
           src={product.image}
           alt="img"
         />
