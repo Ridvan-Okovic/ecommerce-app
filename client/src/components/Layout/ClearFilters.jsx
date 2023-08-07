@@ -1,8 +1,14 @@
-const ClearFilters = ({ setActiveCompany, setActiveCategory, setSort }) => {
+const ClearFilters = ({
+  setActiveCompany,
+  setActiveCategory,
+  setSort,
+  setRange,
+}) => {
   const removeFilters = () => {
     setActiveCategory('All');
     setActiveCompany('All');
     setSort('None');
+    setRange(0);
   };
   return (
     <div className="w-full grid place-items-center">

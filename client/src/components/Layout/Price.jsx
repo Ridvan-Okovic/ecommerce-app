@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
-const Price = () => {
-  const [range, setRange] = useState('');
-
+const Price = ({ range, setRange }) => {
   const rangeChangeHandler = (e) => {
     setRange(e.target.value);
   };
@@ -12,7 +8,7 @@ const Price = () => {
       <form action="">
         <label htmlFor="range">
           {' '}
-          <span>{range ? '$' : ''}</span>
+          <span>{'$'}</span>
           {range}{' '}
         </label>
         <input
@@ -22,7 +18,7 @@ const Price = () => {
           value={range}
           onChange={rangeChangeHandler}
           min={0}
-          max={1000}
+          max={309}
         />
       </form>
     </div>

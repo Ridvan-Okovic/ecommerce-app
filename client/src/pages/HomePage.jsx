@@ -15,6 +15,8 @@ const HomePage = () => {
   const [company, setActiveCompany] = useState('All');
   const [pageNumber, setPageNumber] = useState(1);
   const [sort, setSort] = useState('None');
+  const [range, setRange] = useState(0);
+
   return (
     <section className="mx-56 h-full flex items-center justify-center font-montserrat mt-36">
       <aside className="w-72 px-4 h-full flex flex-col">
@@ -24,12 +26,13 @@ const HomePage = () => {
           setActiveCategory={setActiveCategory}
         />
         <Company company={company} setActiveCompany={setActiveCompany} />
-        <Price />
+        <Price range={range} setRange={setRange} />
         <Shipping />
         <ClearFilters
           setActiveCategory={setActiveCategory}
           setActiveCompany={setActiveCompany}
           setSort={setSort}
+          setRange={setRange}
         />
       </aside>
       <section className="h-full w-[1200px] flex flex-col items-center mx-12">
@@ -40,6 +43,7 @@ const HomePage = () => {
           company={company}
           pageNumber={pageNumber}
           sort={sort}
+          range={range}
         />
 
         <PageNumbers pageNumber={pageNumber} setPageNumber={setPageNumber} />

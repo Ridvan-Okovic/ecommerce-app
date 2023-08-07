@@ -3,9 +3,11 @@ import axios from 'axios';
 import ProductsContext from '../../context/products-context';
 import Product from './Product';
 
-const Products = ({ category, company, pageNumber, sort }) => {
+const Products = ({ category, company, pageNumber, sort, range }) => {
   const { products, setProducts } = useContext(ProductsContext);
   const [error, setError] = useState(false);
+
+  console.log(range);
 
   let url =
     'http://localhost:3001/api/v1/products?fields=price,name,image,company,rating';
@@ -30,6 +32,14 @@ const Products = ({ category, company, pageNumber, sort }) => {
     url = url + `&sort=-price`;
   }
 
+  if (range === 0) {
+    url = url + `&numericFilters=price>${range}`;
+  }
+
+  if (range !== 0) {
+    url = url + `&numericFilters=price<=${Number(range)}`;
+  }
+
   useEffect(() => {
     async function getProducts() {
       try {
@@ -47,7 +57,7 @@ const Products = ({ category, company, pageNumber, sort }) => {
 
     getProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category, company, pageNumber, sort]);
+  }, [category, company, pageNumber, sort, range]);
 
   const noProductsFound = (
     <p className="text-center w-full font-medium text-xl">
