@@ -16,6 +16,7 @@ const HomePage = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [sort, setSort] = useState('None');
   const [range, setRange] = useState(0);
+  const [checked, setChecked] = useState(false);
 
   return (
     <section className="mx-56 h-full flex items-center justify-center font-montserrat mt-36">
@@ -27,12 +28,13 @@ const HomePage = () => {
         />
         <Company company={company} setActiveCompany={setActiveCompany} />
         <Price range={range} setRange={setRange} />
-        <Shipping />
+        <Shipping checked={checked} setChecked={setChecked} />
         <ClearFilters
           setActiveCategory={setActiveCategory}
           setActiveCompany={setActiveCompany}
           setSort={setSort}
           setRange={setRange}
+          setChecked={setChecked}
         />
       </aside>
       <section className="h-full w-[1200px] flex flex-col items-center mx-12">
@@ -44,6 +46,7 @@ const HomePage = () => {
           pageNumber={pageNumber}
           sort={sort}
           range={range}
+          checked={checked}
         />
 
         <PageNumbers pageNumber={pageNumber} setPageNumber={setPageNumber} />

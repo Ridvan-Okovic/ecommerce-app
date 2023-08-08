@@ -3,14 +3,12 @@ import axios from 'axios';
 import ProductsContext from '../../context/products-context';
 import Product from './Product';
 
-const Products = ({ category, company, pageNumber, sort, range }) => {
+const Products = ({ category, company, pageNumber, sort, range, checked }) => {
   const { products, setProducts } = useContext(ProductsContext);
   const [error, setError] = useState(false);
 
-  console.log(range);
-
   let url =
-    'http://localhost:3001/api/v1/products?fields=price,name,image,company,rating';
+    'http://localhost:3001/api/v1/products?fields=price,name,image,company,rating,free_shipping';
 
   if (company !== 'All') {
     url = url + `&company=${company.toLocaleLowerCase()}`;
@@ -32,12 +30,14 @@ const Products = ({ category, company, pageNumber, sort, range }) => {
     url = url + `&sort=-price`;
   }
 
-  if (range === 0) {
-    url = url + `&numericFilters=price>${range}`;
+  if (checked) {
+    url = url + `&shipping=${checked}`;
   }
 
-  if (range !== 0) {
+  if (Number(range) !== 0) {
     url = url + `&numericFilters=price<=${Number(range)}`;
+  } else {
+    url = url + `&numericFilters=price>${Number(range)}`;
   }
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const Products = ({ category, company, pageNumber, sort, range }) => {
 
     getProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category, company, pageNumber, sort, range]);
+  }, [category, company, pageNumber, sort, range, checked]);
 
   const noProductsFound = (
     <p className="text-center w-full font-medium text-xl">

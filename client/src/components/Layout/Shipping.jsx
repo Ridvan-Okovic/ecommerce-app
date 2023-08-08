@@ -1,8 +1,15 @@
-const Shipping = () => {
+const Shipping = ({ checked, setChecked }) => {
   return (
     <form action="" className="w-full flex items-center justify-between mb-4">
       <label htmlFor="">Free Shipping</label>
-      <input type="checkbox" className="h-4 w-4 accent-[#b49b8b]" />
+      <input
+        type="checkbox"
+        onChange={(e) => {
+          setChecked(e.target.checked);
+        }}
+        checked={checked === false ? false : true}
+        className="h-4 w-4 accent-[#b49b8b]"
+      />
     </form>
   );
 };

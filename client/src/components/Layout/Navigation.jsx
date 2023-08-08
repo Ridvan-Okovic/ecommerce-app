@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <header className="w-full h-14 border-b px-10 font-montserrat shadow-sm">
       <nav className="w-full h-full flex items-center justify-between">
-        <ul className="flex gap-6 text-xl font-medium items-center">
+        <ul className="flex gap-6 text-lg font-medium items-center">
           <img src={Logo} className="w-12" alt="logo" />
           <NavLink to={'/home/products'}>Home</NavLink>
           <NavLink to={'/featured/products'}>Featured</NavLink>
