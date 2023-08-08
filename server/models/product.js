@@ -37,6 +37,9 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  free_shipping: {
+    type: Boolean,
+  },
 });
 
 module.exports = mongoose.model('Product', productSchema);
