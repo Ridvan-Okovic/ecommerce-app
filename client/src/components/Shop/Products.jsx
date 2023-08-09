@@ -8,7 +8,7 @@ const Products = ({ category, company, pageNumber, sort, range, checked }) => {
   const [error, setError] = useState(false);
 
   let url =
-    'http://localhost:3001/api/v1/products?fields=price,name,image,company,rating,free_shipping';
+    'http://localhost:3001/api/v1/products?fields=price,name,image,company,rating,free_shipping,featured';
 
   if (company !== 'All') {
     url = url + `&company=${company.toLocaleLowerCase()}`;
@@ -75,6 +75,7 @@ const Products = ({ category, company, pageNumber, sort, range, checked }) => {
         company={product.company}
         rating={product.rating}
         price={product.price}
+        featured={product.featured}
       />
     );
   });

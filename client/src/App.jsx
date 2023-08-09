@@ -6,7 +6,6 @@ import {
 
 import RootLayout from './pages/RootLayout';
 import HomePage from './pages/HomePage';
-import FeaturedPage from './pages/FeaturedPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 
 const router = createBrowserRouter([
@@ -22,10 +21,7 @@ const router = createBrowserRouter([
         path: 'home/products/:id',
         element: <ProductDetailsPage />,
       },
-      {
-        path: 'featured/products',
-        element: <FeaturedPage />,
-      },
+
       {
         path: '/',
         element: <Navigate to="home/products" redirect />,

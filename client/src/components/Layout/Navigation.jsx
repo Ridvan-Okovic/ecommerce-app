@@ -10,7 +10,6 @@ const Navigation = () => {
         <ul className="flex gap-6 text-lg font-medium items-center">
           <img src={Logo} className="w-12" alt="logo" />
           <NavLink to={'/home/products'}>Home</NavLink>
-          <NavLink to={'/featured/products'}>Featured</NavLink>
         </ul>
         <ul className="flex gap-6 items-center justify-center">
           <li className="flex items-center justify-center gap-1">
