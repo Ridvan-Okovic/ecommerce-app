@@ -11,7 +11,7 @@ const Product = (props) => {
         />
         {props.featured && (
           <svg
-            className={`w-6 h-6 absolute top-5 left-1 text-yellow-400`}
+            className={`w-6 h-6 absolute top-1 left-1 text-yellow-400`}
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
