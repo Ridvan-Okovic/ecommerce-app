@@ -16,9 +16,12 @@ const Navigation = () => {
             <HiShoppingCart className="text-xl" />
           </li>
 
-          <button className="border px-[14px] py-[2px] rounded-full bg-slate-50 text-[#64748b] hover:border-slate-300">
+          <NavLink
+            to="/home/login"
+            className="border px-[14px] py-[2px] rounded-full bg-slate-50 text-[#64748b] hover:border-slate-300"
+          >
             Log in
-          </button>
+          </NavLink>
         </ul>
       </nav>
     </header>

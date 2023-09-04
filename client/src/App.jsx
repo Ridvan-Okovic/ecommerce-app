@@ -7,6 +7,8 @@ import {
 import RootLayout from './pages/RootLayout';
 import HomePage from './pages/HomePage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: 'home/products/:id',
         element: <ProductDetailsPage />,
+      },
+      {
+        path: 'home/login',
+        element: <LoginPage />,
+      },
+      {
+        path: 'home/register',
+        element: <RegisterPage />,
       },
 
       {

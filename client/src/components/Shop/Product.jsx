@@ -4,11 +4,13 @@ const Product = (props) => {
   return (
     <div className="w-96">
       <Link className="relative" to={`/home/products/${props.id}`}>
-        <img
-          src={props.image}
-          className="w-full h-56 object-cover rounded shadow-md hover:cursor-pointer hover:shadow-lg transition-all duration-200"
-          alt="img"
-        />
+        <div className="w-full h-56 overflow-hidden rounded">
+          <img
+            src={props.image}
+            className="w-full h-56 object-cover rounded shadow-md hover:cursor-pointer hover:shadow-lg transition-all duration-200 hover:scale-105"
+            alt="img"
+          />
+        </div>
         {props.featured && (
           <div
             className={`w-10 h-7 absolute -top-1 -left-1 rounded-sm flex items-center justify-center bg-yellow-400`}
