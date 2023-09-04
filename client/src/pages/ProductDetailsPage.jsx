@@ -24,7 +24,7 @@ const ProductDetailsPage = () => {
   console.log(product);
 
   return (
-    <div className="w-full h-[calc(100%-56px)] grid place-items-center">
+    <div className="w-full h-[calc(100%-56px)] grid place-items-center font-montserrat text-justify">
       <div className="w-2/4 shadow-[0_1.5px_5px_0_rgba(0,0,0,0.15)] rounded flex">
         <img
           className="object-contain w-96 rounded-l"
