@@ -23,7 +23,8 @@ This is a full-stack application built using React, Vite, Tailwind CSS, Node.js,
 ## Contributing
 Contributions are welcome! If you find any issues or want to add new features, please open an issue or submit a pull request.
 
-![My Image](images/all_products_v2.png)
+![My Image](images/landing.png)
+![My Image](images/all_products_v3.png)
 ![My Image](images/products_search.png)
 ![My Image](images/products_filtered.png)
 ![My Image](images/product_details_v2.png)
