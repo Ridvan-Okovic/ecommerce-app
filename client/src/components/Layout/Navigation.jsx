@@ -1,15 +1,19 @@
 import { NavLink } from 'react-router-dom';
 
-import Logo from '../../assets/ecommerce-online-shopping-shoppingcart-svgrepo-com.svg';
+import Logo from '../../assets/logo.svg';
 import { HiShoppingCart } from 'react-icons/hi';
 
 const Navigation = () => {
   return (
     <header className="w-full h-14 border-b px-10 font-montserrat shadow-sm">
-      <nav className="w-full h-full flex items-center justify-between">
+      <nav className="w-full h-full flex items-center justify-between ">
         <ul className="flex gap-6 text-lg font-medium items-center">
-          <img src={Logo} className="w-12" alt="logo" />
-          <NavLink to={'/home/products'}>Home</NavLink>
+          <NavLink to="/home">
+            <img src={Logo} className="w-28" alt="logo" />
+          </NavLink>
+          <NavLink to={'/home/products'}>Shop</NavLink>
+          <NavLink to={'/home/about'}>About Us</NavLink>
+          <NavLink to={'/home/contact'}>Contact</NavLink>
         </ul>
         <ul className="flex gap-6 items-center justify-center">
           <li className="flex items-center justify-center gap-1">

@@ -9,12 +9,14 @@ import HomePage from './pages/HomePage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import LandingPage from './pages/LandingPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     children: [
+      { path: '/home', element: <LandingPage /> },
       {
         path: 'home/products',
         element: <HomePage />,
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
 
       {
         path: '/',
-        element: <Navigate to="home/products" redirect />,
+        element: <Navigate to="/home" redirect />,
       },
     ],
   },
