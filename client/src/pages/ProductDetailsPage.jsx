@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart, increaseAmount } from '../features/cart/cartSlice';
 
 const ProductDetailsPage = () => {
   const [product, setProduct] = useState({});
+  const { cartItems } = useSelector((store) => store.cart);
+  const dispatch = useDispatch();
   const { id } = useParams();
+
+  console.log(cartItems);
 
   useEffect(() => {
     async function getProduct() {
@@ -20,8 +26,6 @@ const ProductDetailsPage = () => {
     getProduct();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  console.log(product);
 
   return (
     <div className="w-full h-[calc(100%-56px)] grid place-items-center font-montserrat text-justify">
@@ -123,7 +127,24 @@ const ProductDetailsPage = () => {
           </div>
           <div className="w-full flex justify-end gap-4">
             <span className="text-2xl text-[#b49b8b]">${product.price}</span>
-            <button className="bg-[#f8fafc] px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize">
+            <button
+              onClick={() => {
+                const cartItem = cartItems.find((item) => item.id === id);
+                if (!cartItem) {
+                  dispatch(
+                    addToCart({
+                      id,
+                      name: product.name,
+                      price: product.price,
+                      image: product.image,
+                    })
+                  );
+                  return;
+                }
+                dispatch(increaseAmount({ id }));
+              }}
+              className="bg-[#f8fafc] px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize"
+            >
               Add to cart
             </button>
           </div>

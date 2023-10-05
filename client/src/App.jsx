@@ -16,7 +16,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <RootLayout />,
     children: [
-      { path: '/home', element: <LandingPage /> },
+      {
+        path: '/home',
+        element: <LandingPage />,
+      },
       {
         path: 'home/products',
         element: <HomePage />,
@@ -33,7 +36,6 @@ const router = createBrowserRouter([
         path: 'home/register',
         element: <RegisterPage />,
       },
-
       {
         path: '/',
         element: <Navigate to="/home" redirect />,

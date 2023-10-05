@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import ProductsProvider from './context/ProductsProvider.jsx';
+import { Provider } from 'react-redux';
+import { store } from './store/store.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ProductsProvider>
-      <App />
-    </ProductsProvider>
+    <Provider store={store}>
+      <ProductsProvider>
+        <App />
+      </ProductsProvider>
+    </Provider>
   </React.StrictMode>
 );
