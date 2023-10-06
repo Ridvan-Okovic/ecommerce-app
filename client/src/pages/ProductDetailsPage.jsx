@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Toaster, toast } from 'sonner';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart, increaseAmount } from '../features/cart/cartSlice';
@@ -28,7 +29,10 @@ const ProductDetailsPage = () => {
   }, []);
 
   return (
-    <div className="w-full h-[calc(100%-56px)] grid place-items-center font-montserrat text-justify">
+    <div className="w-screen h-[calc(100vh-56px)] relative grid place-items-center font-montserrat text-justify">
+      <div className="absolute top-0 left-0">
+        <Toaster richColors position="top-center" />
+      </div>
       <div className="w-2/4 shadow-[0_1.5px_5px_0_rgba(0,0,0,0.15)] rounded flex">
         <img
           className="object-contain w-96 rounded-l"
@@ -139,9 +143,11 @@ const ProductDetailsPage = () => {
                       image: product.image,
                     })
                   );
+                  toast.success('Item successfully added to cart!');
                   return;
                 }
                 dispatch(increaseAmount({ id }));
+                toast.success('Item successfully added to cart!');
               }}
               className="bg-[#f8fafc] px-2 py-[2px] rounded border shadow-sm text-[#64748b] capitalize"
             >

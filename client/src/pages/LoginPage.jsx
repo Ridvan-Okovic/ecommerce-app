@@ -23,7 +23,7 @@ const LoginPage = () => {
   console.log(email, password);
 
   return (
-    <div className="flex h-[calc(100%-56px)] items-center justify-center font-montserrat">
+    <div className="flex h-[calc(100vh-56px)] items-center justify-center font-montserrat">
       <form
         onSubmit={loginHandler}
         className="w-96 shadow-lg rounded flex flex-col px-8 py-8 gap-4"
@@ -38,7 +38,7 @@ const LoginPage = () => {
             value={email}
             placeholder="example@gmail.com"
             type="email"
-            className="w-full h-8 text-sm outline-none px-2 focus:shadow-md shadow bg-slate-50 border border-slate-300 text-[#64748b] rounded"
+            className="w-full h-8 text-sm outline-none px-3 focus:shadow-md shadow bg-slate-50 border border-slate-300 text-[#64748b] rounded"
           />
         </div>
         <div className="flex flex-col gap-0.5">
@@ -52,15 +52,18 @@ const LoginPage = () => {
             value={password}
             placeholder="••••••"
             type="password"
-            className="w-full h-8 text-lg outline-none focus:shadow-md px-2 shadow bg-slate-50 border border-slate-300 text-[#64748b] rounded"
+            className="w-full h-8 text-lg outline-none focus:shadow-md px-3 shadow bg-slate-50 border border-slate-300 text-[#64748b] rounded"
           />
         </div>
-        <button className="w-full h-8 rounded shadow bg-[#b49b8b]">
+        <button className="w-full h-8 rounded font-bold text-white bg-green-500">
           Submit
         </button>
         <p className="text-center">
           {`Don't have an account,`}{' '}
-          <Link to="/home/register" className="text-[#b49b8b] underline">
+          <Link
+            to="/home/register"
+            className="text-cyan-500 underline font-medium"
+          >
             Register
           </Link>
         </p>

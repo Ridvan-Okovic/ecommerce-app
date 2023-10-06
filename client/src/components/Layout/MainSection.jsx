@@ -1,6 +1,6 @@
 const MainSection = (props) => {
   return (
-    <section className="w-screen h-screen overflow-hidden">
+    <section className="w-screen max-h-screen overflow-x-hidden 3xl:overflow-hidden">
       {props.children}
     </section>
   );

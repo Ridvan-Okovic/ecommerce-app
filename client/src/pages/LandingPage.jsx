@@ -44,7 +44,7 @@ const LandingPage = () => {
         <div className="z-10 w-full flex items-center justify-center absolute">
           <input
             type="text"
-            className="rounded-full p-2 px-4 placeholder:text-white bg-opacity-20 backdrop-blur-lg bg-white border w-72 text-white"
+            className="rounded-full p-2 px-4 outline-none placeholder:text-white bg-opacity-20 backdrop-blur-lg bg-white border w-72 text-white"
             placeholder="Search furniture"
           />
           <button className="p-[6px] rounded-full bg-gradient-to-r from-green-400 to-cyan-500 -translate-x-[38px]">

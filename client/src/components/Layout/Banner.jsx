@@ -7,7 +7,7 @@ import { VscTriangleDown } from 'react-icons/vsc';
 const Banner = ({ sort, setSort }) => {
   const { products } = useContext(ProductsContext);
   return (
-    <div className="flex w-full justify-between items-baseline gap-6 mb-4 text-xl font-medium">
+    <div className="flex w-full justify-between items-baseline gap-6 mb-4 2xl:text-lg 3xl:text-xl font-medium">
       <h3>
         <span>{products.length} </span>
         Products Found

@@ -13,7 +13,7 @@ const Price = ({ range, setRange }) => {
         </label>
         <input
           id="range"
-          className="w-full accent-[#b49b8b]"
+          className="w-full accent-[#16a3b6]"
           type="range"
           value={range}
           onChange={rangeChangeHandler}

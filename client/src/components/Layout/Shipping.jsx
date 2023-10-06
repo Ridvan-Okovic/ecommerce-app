@@ -8,7 +8,7 @@ const Shipping = ({ checked, setChecked }) => {
           setChecked(e.target.checked);
         }}
         checked={checked === false ? false : true}
-        className="h-4 w-4 accent-[#b49b8b]"
+        className="h-4 w-4 accent-[#16a3b6]"
       />
     </form>
   );

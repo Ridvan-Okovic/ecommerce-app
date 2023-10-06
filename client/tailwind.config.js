@@ -5,7 +5,11 @@ export default {
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '2050px',
+      },
+    },
   },
   plugins: [],
 };

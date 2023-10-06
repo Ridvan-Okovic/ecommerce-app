@@ -9,7 +9,7 @@ const Navigation = () => {
   const { amount } = useSelector((store) => store.cart);
   console.log(amount);
   return (
-    <header className="w-full h-14 border-b px-10 font-montserrat shadow-sm">
+    <header className="w-full h-14 px-10 font-montserrat shadow-sm">
       <nav className="w-full h-full flex items-center justify-between ">
         <ul className="flex gap-6 text-lg font-medium items-center">
           <NavLink to="/home">
@@ -30,7 +30,9 @@ const Navigation = () => {
                 {amount}
               </motion.div>
             )}
-            <img src={cartSvg} alt="cart" className="w-6" />
+            <NavLink to="/home/cart">
+              <img src={cartSvg} alt="cart" className="w-6" />
+            </NavLink>
           </li>
 
           <NavLink
