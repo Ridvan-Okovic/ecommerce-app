@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
-    <div className="h-screen w-screen -translate-y-14 relative">
+    <div className="h-screen w-screen relative">
       <img src={bgImage} className="w-full h-full object-cover" alt="" />
       <nav className="w-full h-20 absolute top-0 left-0 flex items-center justify-between px-28 font-montserrat">
         <img src={logoWhite} className="w-36" alt="" />

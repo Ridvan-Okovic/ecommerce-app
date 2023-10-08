@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
 import Logo from '../../assets/logo.svg';
-import cartSvg from '../../assets/cart.svg';
+import { CartIcon } from '../../utils/icons';
 
 const Navigation = () => {
   const { amount } = useSelector((store) => store.cart);
@@ -31,7 +31,7 @@ const Navigation = () => {
               </motion.div>
             )}
             <NavLink to="/home/cart">
-              <img src={cartSvg} alt="cart" className="w-6" />
+              <CartIcon />
             </NavLink>
           </li>
 

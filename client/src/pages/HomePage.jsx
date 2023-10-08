@@ -37,7 +37,7 @@ const HomePage = () => {
           setChecked={setChecked}
         />
       </aside>
-      <section className="w-[1200px] flex flex-col items-center mx-12">
+      <section className="max-w-[1200px] flex flex-col items-center mx-12">
         <Banner sort={sort} setSort={setSort} />
 
         <Products

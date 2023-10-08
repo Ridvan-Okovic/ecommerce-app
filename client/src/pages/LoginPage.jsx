@@ -26,9 +26,9 @@ const LoginPage = () => {
     <div className="flex h-[calc(100vh-56px)] items-center justify-center font-montserrat">
       <form
         onSubmit={loginHandler}
-        className="w-96 shadow-lg rounded flex flex-col px-8 py-8 gap-4"
+        className="w-96 shadow-[0_1.5px_5px_0_rgba(0,0,0,0.15)] rounded flex flex-col px-8 py-8 gap-4"
       >
-        <h1 className="text-center text-3xl">Login</h1>
+        <h1 className="text-center font-medium text-3xl">Log in</h1>
         <div className="flex flex-col gap-0.5">
           <label htmlFor="" className="font-medium">
             Email
@@ -55,14 +55,14 @@ const LoginPage = () => {
             className="w-full h-8 text-lg outline-none focus:shadow-md px-3 shadow bg-slate-50 border border-slate-300 text-[#64748b] rounded"
           />
         </div>
-        <button className="w-full h-8 rounded font-bold text-white bg-green-500">
+        <button className="w-full h-8 rounded font-medium text-white bg-green-500">
           Submit
         </button>
         <p className="text-center">
           {`Don't have an account,`}{' '}
           <Link
             to="/home/register"
-            className="text-cyan-500 underline font-medium"
+            className="text-green-500 underline font-medium"
           >
             Register
           </Link>
