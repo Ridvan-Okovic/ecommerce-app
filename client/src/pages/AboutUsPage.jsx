@@ -8,7 +8,7 @@ const AboutUs = () => {
           <span className="text-green-500">Pallessi </span>
           is the only verified reseller of
         </h3>
-        <h3>authenitaced limitied edition furniture sets.</h3>
+        <h3>authenticated limitied edition furniture sets.</h3>
       </div>
       <section className="w-full mt-24 flex flex-row gap-8 items-center justify-center">
         <div className="flex gap-4 w-80">
