@@ -19,7 +19,7 @@ const HomePage = () => {
   const [checked, setChecked] = useState(false);
 
   return (
-    <section className="mx-56 min-h-full flex mt-36 mb-36 justify-center font-montserrat">
+    <section className="mx-8 lg:mx-24 xl:mx-36 2xl:mx-36 3xl:mx-56 min-h-full flex mt-36 mb-36 justify-center font-montserrat">
       <aside className="w-72 px-4 flex flex-col">
         <Search />
         <Category
@@ -37,7 +37,7 @@ const HomePage = () => {
           setChecked={setChecked}
         />
       </aside>
-      <section className="max-w-[1200px] flex flex-col items-center mx-12">
+      <section className="flex flex-col items-center mx-12">
         <Banner sort={sort} setSort={setSort} />
 
         <Products

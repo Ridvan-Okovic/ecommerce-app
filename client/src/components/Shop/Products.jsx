@@ -83,7 +83,7 @@ const Products = ({ category, company, pageNumber, sort, range, checked }) => {
   return (
     <>
       {error && noProductsFound}
-      <div className="grid 2xl:grid-cols-2 3xl:grid-cols-3 gap-x-6 gap-y-8">
+      <div className="grid xl:grid-cols-2 2xl:grid-cols-3 gap-x-6 gap-y-8">
         <Suspense
           fallback={
             <p className="text-center w-full font-medium text-xl">Loading...</p>
