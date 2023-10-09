@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import RootLayout from './pages/RootLayout';
 import HomePage from './pages/HomePage';
@@ -11,13 +7,14 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import LandingPage from './pages/LandingPage';
 import CartPage from './pages/CartPage';
+import AboutUsPage from './pages/AboutUsPage';
+import ContactPage from './pages/ContactPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     children: [
-      {},
       {
         path: 'home/products',
         element: <HomePage />,
@@ -38,10 +35,8 @@ const router = createBrowserRouter([
         path: 'home/register',
         element: <RegisterPage />,
       },
-      {
-        path: '/',
-        element: <Navigate to="/home" redirect />,
-      },
+      { path: '/about', element: <AboutUsPage /> },
+      { path: '/contact', element: <ContactPage /> },
     ],
   },
   { path: '/home', element: <LandingPage /> },

@@ -15,9 +15,9 @@ const Navigation = () => {
           <NavLink to="/home">
             <img src={Logo} className="w-28" alt="logo" />
           </NavLink>
-          <NavLink to={'/home/products'}>Shop</NavLink>
-          <NavLink to={'/home/about'}>About Us</NavLink>
-          <NavLink to={'/home/contact'}>Contact</NavLink>
+          <NavLink to={'home/products'}>Shop</NavLink>
+          <NavLink to={'/about'}>About Us</NavLink>
+          <NavLink to={'/contact'}>Contact</NavLink>
         </ul>
         <ul className="flex gap-6 items-center justify-center">
           <li className="flex items-center justify-center gap-1 relative">

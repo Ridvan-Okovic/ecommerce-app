@@ -57,7 +57,7 @@ const Products = ({ category, company, pageNumber, sort, range, checked }) => {
 
     getProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category, company, pageNumber, sort, range, checked]);
+  }, [url]);
 
   const noProductsFound = (
     <p className="text-center w-full font-medium text-xl">

@@ -34,3 +34,4 @@ Contributions are welcome! If you find any issues or want to add new features, p
 ![My Image](images/products_filtered_v2.png)
 ![My Image](images/product_details_v3.png)
 ![My Image](images/cart.png)
+![My Image](images/contact.png)
